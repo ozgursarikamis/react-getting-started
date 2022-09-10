@@ -1,13 +1,19 @@
 import './App.css';
 
-const App = () => {
-  const outside = true;
-  const city = "Sarajevo";
+const Person = () => {
+  return (
+    <>
+      <h1>Name : John</h1>
+      <h2>Last Name : Doe</h2>
+      <h2>Age : 30</h2>
+    </>
+  )
+}
 
+const App = () => {
   return (
     <div className="App">
-      <h1>Hello {outside ? city : 'Istanbul' } !</h1>
-      { !outside ? (<h2>It's sunny</h2>) : (<></>) }
+      <Person></Person>
     </div>
   )
 }
